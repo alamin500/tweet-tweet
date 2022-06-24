@@ -8,7 +8,6 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     />
-    <link rel="stylesheet" href="./src/styles.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -19,24 +18,30 @@
     <div class="text-center">
       <h1>Tweet Tweet</h1>
       <hr />
-      <dir class="me-0">
-        <input placeholder="Search Tweet" class="" type="text" />
-      </dir>
+      <div class="me-0">
+        <input placeholder="Search Tweet" class="filter" type="text" />
+      </div>
       <div class="d-flex left-box">
         <div class="col-5 border">
-          <input
-            placeholder="Type Tweet text"
-            class="mt-5 mb-3"
-            type="text"
-            name=""
-            id=""
-          />
-          <br />
-          <input class="mb-5 w-50" type="submit" name="" id="" />
+          <form
+            class="submit-input"
+            action="
+      "
+          >
+            <input
+              placeholder="Type Tweet text"
+              class="mt-5 mb-3 text-input"
+              type="text"
+              name=""
+              id=""
+            />
+            <br />
+            <input class="mb-5 w-50" type="submit" name="" id="" />
+          </form>
         </div>
 
-        <div class="col-5 border">
-          <div class="d-flex align-items-center">
+        <div class="col-5 border text-group">
+          <!-- <div class="d-flex align-items-center">
             <p class="m-0">1. Tweet 1 text</p>
             <button class="ms-2">Delete</button>
           </div>
@@ -51,10 +56,10 @@
           <div class="d-flex align-items-center">
             <p class="m-0">1. Tweet 1 text</p>
             <button class="ms-2">Delete</button>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
-    <!-- <script src="main1.js"></script> -->
+    <script src="./tweet.js"></script>
   </body>
 </html>
