@@ -4,7 +4,8 @@ const textGroupElm = document.querySelector(".text-group");
 const filterElm = document.querySelector(".filter");
 
 let products = [];
-console.log(products);
+// const p = products.map((product) => product.name);
+// console.log(p);
 submitElm.addEventListener("submit", (evt) => {
   evt.preventDefault();
   const name = inputElm.value;
@@ -40,7 +41,7 @@ function showAllItemToUI(items) {
   textGroupElm.innerHTML = "";
   items.forEach((item) => {
     const listElm = ` <div class="d-flex align-items-center">
-    <p class="m-0">1. text</p>
+    <p class="m-0">1. ${item.name}</p>
     <button class="ms-2">Delete</button>
   </div>`;
 
