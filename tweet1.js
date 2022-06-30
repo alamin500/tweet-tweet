@@ -12,6 +12,9 @@ submitElm.addEventListener("submit", (evt) => {
     return alert("Text is too long! More than 250 words.");
   const inputText = inputElm.value;
   const textCount = inputText.length;
+  if (textCount === 0) {
+    return alert("Write something");
+  }
   letterCount.innerHTML = textCount;
   const product = {
     id: products.length,
@@ -46,6 +49,11 @@ filterSearch.addEventListener("keyup", (evt) => {
     product.name.includes(filterText)
   );
   showOutput(filterElm);
+});
+inputElm.addEventListener("keyup", (evt) => {
+  const inputText = evt.target.value;
+  const textCount = inputText.length;
+  letterCount.innerHTML = textCount;
 });
 
 function showOutput(textElm) {
